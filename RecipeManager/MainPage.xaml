@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeManager.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="cooking_hat.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="CookingHat" />
+
+            <Label
+                Text="Welcome to your personal Recipe-manager!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

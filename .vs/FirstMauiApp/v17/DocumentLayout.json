@@ -38,8 +38,7 @@
               "RelativeToolTip": "FirstMauiApp\\AppShell.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T17:03:30.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-07T17:03:30.643Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "FirstMauiApp\\AppShell.xaml",
               "ToolTip": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\AppShell.xaml",
               "RelativeToolTip": "FirstMauiApp\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-07T17:00:26.407Z",
               "EditorCaption": ""
@@ -64,21 +63,19 @@
               "RelativeToolTip": "FirstMauiApp\\Views\\AddRecipeView.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-07T17:00:18.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-07T17:00:18.383Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FirstMauiApp",
+              "Title": "FirstMauiApp.csproj",
               "DocumentMoniker": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\FirstMauiApp.csproj",
               "RelativeDocumentMoniker": "FirstMauiApp\\FirstMauiApp.csproj",
               "ToolTip": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\FirstMauiApp.csproj",
               "RelativeToolTip": "FirstMauiApp\\FirstMauiApp.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-07T16:54:13.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-07T16:54:13.716Z"
             }
           ]
         }
