@@ -1,0 +1,1 @@
+C:\Users\latze\OneDrive\Desktop\Privat\Programmieren\C#\MobileApps\FirstMauiApp\FirstMauiApp\FirstMauiApp.csproj;x64

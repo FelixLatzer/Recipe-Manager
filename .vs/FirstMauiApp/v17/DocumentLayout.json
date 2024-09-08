@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|c:\\users\\latze\\onedrive\\desktop\\privat\\programmieren\\c#\\mobileapps\\firstmauiapp\\firstmauiapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|solutionrelative:firstmauiapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|c:\\users\\latze\\onedrive\\desktop\\privat\\programmieren\\c#\\mobileapps\\firstmauiapp\\firstmauiapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|solutionrelative:firstmauiapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|c:\\users\\latze\\onedrive\\desktop\\privat\\programmieren\\c#\\mobileapps\\firstmauiapp\\firstmauiapp\\views\\addrecipeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|solutionrelative:firstmauiapp\\views\\addrecipeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|c:\\users\\latze\\onedrive\\desktop\\privat\\programmieren\\c#\\mobileapps\\firstmauiapp\\firstmauiapp\\firstmauiapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9BBA65B-2BC5-4D43-B224-FEB7131CA9DE}|FirstMauiApp\\FirstMauiApp.csproj|solutionrelative:firstmauiapp\\firstmauiapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 223,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "FirstMauiApp\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "FirstMauiApp\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T17:03:30.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "FirstMauiApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\AppShell.xaml",
+              "RelativeToolTip": "FirstMauiApp\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-07T17:00:26.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddRecipeView.xaml",
+              "DocumentMoniker": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\Views\\AddRecipeView.xaml",
+              "RelativeDocumentMoniker": "FirstMauiApp\\Views\\AddRecipeView.xaml",
+              "ToolTip": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\Views\\AddRecipeView.xaml",
+              "RelativeToolTip": "FirstMauiApp\\Views\\AddRecipeView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-07T17:00:18.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FirstMauiApp",
+              "DocumentMoniker": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\FirstMauiApp.csproj",
+              "RelativeDocumentMoniker": "FirstMauiApp\\FirstMauiApp.csproj",
+              "ToolTip": "C:\\Users\\latze\\OneDrive\\Desktop\\Privat\\Programmieren\\C#\\MobileApps\\FirstMauiApp\\FirstMauiApp\\FirstMauiApp.csproj",
+              "RelativeToolTip": "FirstMauiApp\\FirstMauiApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-07T16:54:13.716Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
