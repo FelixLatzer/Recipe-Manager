@@ -19,5 +19,8 @@
     <FlyoutItem Title="New recipe">
         <ShellContent ContentTemplate="{DataTemplate views:AddRecipeView}" />
     </FlyoutItem>
+    <FlyoutItem Title="My recipes">
+        <ShellContent ContentTemplate="{DataTemplate views:MyRecipesView}" />
+    </FlyoutItem>
 
 </Shell>

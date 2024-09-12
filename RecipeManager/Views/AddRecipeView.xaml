@@ -1,12 +1,53 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:RecipeManager.ViewModels"
+             xmlns:model="clr-namespace:RecipeManager.Models"
              x:Class="RecipeManager.Views.AddRecipeView"
+             x:DataType="viewModel:AddRecipeViewModel"
              Title="Add recipe">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+        Text="Create a new Recipe"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        Margin="10"/>
+
+            <Editor Text="{Binding Name}"
+                    Placeholder="Enter the name of the Recipe"
+                    Margin="10"/>
+
+            <CollectionView ItemsSource="{Binding Steps}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Step">
+                        <Frame BorderColor="Gray" CornerRadius="10" Padding="5" Margin="5">
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding StepNumber, StringFormat='Step {0}'}" FontSize="Title" FontAttributes="Bold" Grid.Row="0"/>
+                                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" Grid.Row="1" Margin="2"/>
+                                <Label Text="{Binding Description}" FontSize="Body" Grid.Row="2"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Editor Text="{Binding CurrentStep.Description}" 
+            Placeholder="Enter a step"
+            Margin="10"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Add step" Command="{Binding AddStepCommand}" Margin="10" Grid.Column="0"/>
+                <Button Text="Save recipe" Command="{Binding SaveRecipeCommand}" Margin="10" Grid.Column="1"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

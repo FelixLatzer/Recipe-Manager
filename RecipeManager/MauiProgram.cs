@@ -1,4 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
+using RecipeManager.Database;
+using RecipeManager.ViewModels;
+using RecipeManager.Views;
+using SQLitePCL;
 
 namespace RecipeManager
 {
@@ -15,6 +19,17 @@ namespace RecipeManager
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            Batteries_V2.Init();
+
+            builder.Services.AddDbContextFactory<Context>(lifetime: ServiceLifetime.Transient);
+            builder.Services.AddTransient<AddRecipeViewModel>();
+            builder.Services.AddTransient<AddRecipeView>();
+            builder.Services.AddTransient<MyRecipeViewModel>();
+            builder.Services.AddTransient<MyRecipesView>();
+
+            var dbContext = new Context();
+            dbContext.Database.EnsureCreated();
+            dbContext.Dispose();
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
