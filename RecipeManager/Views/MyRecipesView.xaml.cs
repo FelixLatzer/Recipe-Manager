@@ -17,6 +17,7 @@ public partial class MyRecipesView : ContentPage
     {
         base.OnAppearing();
 
-		_recipeViewModel.LoadData();
+        BindingContext = _recipeViewModel;
+        _recipeViewModel.LoadData();
     }
 }

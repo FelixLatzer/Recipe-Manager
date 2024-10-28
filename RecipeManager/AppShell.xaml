@@ -23,4 +23,6 @@
         <ShellContent ContentTemplate="{DataTemplate views:MyRecipesView}" />
     </FlyoutItem>
 
+    <ShellContent ContentTemplate="{DataTemplate views:MyRecipeDetailView}"/>
+
 </Shell>

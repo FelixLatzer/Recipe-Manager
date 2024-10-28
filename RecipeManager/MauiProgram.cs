@@ -26,6 +26,8 @@ namespace RecipeManager
             builder.Services.AddTransient<AddRecipeView>();
             builder.Services.AddTransient<MyRecipeViewModel>();
             builder.Services.AddTransient<MyRecipesView>();
+            builder.Services.AddTransient<MyRecipeDetailViewModel>();
+            builder.Services.AddTransient<MyRecipeDetailView>();
 
             var dbContext = new Context();
             dbContext.Database.EnsureCreated();

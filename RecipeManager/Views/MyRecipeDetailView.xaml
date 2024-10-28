@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeManager.Views.MyRecipeDetailView"
+             xmlns:viewModel="clr-namespace:RecipeManager.ViewModels"
+             xmlns:model="clr-namespace:RecipeManager.Models"
+             x:DataType="viewModel:MyRecipeDetailViewModel"
+             Title="MyRecipeDetailView">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+            Text="{Binding Recipe.Name}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Title"
+            Margin="10"/>
+
+            <CollectionView ItemsSource="{Binding Recipe.Steps}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Step">
+                        <Frame BorderColor="Gray">
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding StepNumber, StringFormat='Step {0}'}" FontSize="Title" FontAttributes="Bold" Grid.Row="0"/>
+                                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" Grid.Row="1" Margin="2"/>
+                                <Label Text="{Binding Description}" FontSize="Body" Grid.Row="2"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

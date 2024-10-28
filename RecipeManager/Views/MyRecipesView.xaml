@@ -5,22 +5,44 @@
              xmlns:model="clr-namespace:RecipeManager.Models"
              x:Class="RecipeManager.Views.MyRecipesView"
              x:DataType="viewModel:MyRecipeViewModel"
-             Title="MyRecipesView">
+             Title="My Recipes">
     <ScrollView>
         <VerticalStackLayout>
             <Label 
-            Text="Your recipes"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            FontSize="Title"
-            Margin="10"/>
+                Text="Your recipes"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="Title"
+                Margin="10"/>
 
             <CollectionView ItemsSource="{Binding Recipes}">
+
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Recipe">
-                        <Grid Margin="5" Padding="2">
-                            <Button Text="{Binding Name}"/>
-                        </Grid>
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete"
+                                               BackgroundColor="Red"
+                                               Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:MyRecipeViewModel}}, Path=DeleteRecipeCommand}"
+                                               CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+
+                            <!-- Add a tap gesture recognizer to handle navigation -->
+                            <Frame BorderColor="Gray" Margin="5" Padding="10">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:MyRecipeViewModel}}, Path=OpenRecipeCommand}"
+                                        CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
+                                <Grid>
+                                    <Label Text="{Binding Name}" 
+                                           VerticalOptions="Center" 
+                                           FontSize="Medium"/>
+                                </Grid>
+                            </Frame>
+                        </SwipeView>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

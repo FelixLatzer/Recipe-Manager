@@ -7,25 +7,12 @@ using System.Windows.Input;
 
 namespace RecipeManager.Utils;
 
-class RelayCommand : ICommand
+public class RelayCommandWithParameter (Action execute, Func<bool>? canExecute = null) : ICommand
 {
-    private readonly Action? _execute;
-    private readonly Action<object>? _executeWithParameter;
-    private readonly Func<bool> _canExecute;
+    private readonly Action _execute = execute ?? throw new ArgumentNullException(nameof(execute));
+    private readonly Func<bool> _canExecute = canExecute;
 
     public event EventHandler CanExecuteChanged;
-
-    public RelayCommand(Action execute, Func<bool>? canExecute = null)
-    {
-        _execute = execute ?? throw new ArgumentNullException(nameof(execute));
-        _canExecute = canExecute;
-    }
-
-    public RelayCommand(Action<object> execute, Func<bool>? canExecute = null)
-    {
-        _executeWithParameter = execute ?? throw new ArgumentNullException(nameof(execute));
-        _canExecute = canExecute;
-    }
 
     /// <summary>
     /// This method determines if the command can be executed.
@@ -43,13 +30,7 @@ class RelayCommand : ICommand
     /// <param name="parameter"></param>
     public void Execute(object parameter)
     {
-        if (_executeWithParameter is null)
-        {
-            _execute();
-            return;
-        }
-
-        _executeWithParameter(parameter);
+        _execute();
     }
 
     /// <summary>

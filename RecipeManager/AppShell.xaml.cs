@@ -10,6 +10,7 @@ namespace RecipeManager
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
             Routing.RegisterRoute(nameof(AddRecipeView), typeof(AddRecipeView));
             Routing.RegisterRoute(nameof(MyRecipesView), typeof(MyRecipesView));
+            Routing.RegisterRoute(nameof(MyRecipeDetailView), typeof(MyRecipeDetailView));
         }
     }
 }
